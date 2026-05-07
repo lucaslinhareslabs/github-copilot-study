@@ -45,6 +45,17 @@
       <p>&copy; 2023 Mergington High School</p>
     </footer>
 
+    <dialog id="confirm-dialog" class="confirm-dialog" role="alertdialog" aria-modal="true" aria-labelledby="confirm-dialog-title" aria-describedby="confirm-dialog-description">
+      <div class="dialog-content">
+        <h2 id="confirm-dialog-title">Confirm Removal</h2>
+        <p id="confirm-dialog-description">Remove <strong id="confirm-participant-name"></strong> from <strong id="confirm-activity-name"></strong>?</p>
+        <div class="dialog-actions">
+          <button type="button" id="confirm-cancel-btn">Cancel</button>
+          <button type="button" id="confirm-remove-btn">Confirm</button>
+        </div>
+      </div>
+    </dialog>
+
     <script src="app.js"></script>
   </body>
 </html>
